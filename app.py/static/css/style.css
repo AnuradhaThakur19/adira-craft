@@ -1,0 +1,144 @@
+/* Google Font: Poppins */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background:#FFFDFD;
+    color:#5A4A4A;
+}
+
+/* Navbar */
+nav{
+    background:#FFEFF5;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+    color:#B05D7A;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:600;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#E76F9A;
+}
+
+/* Hero Banner */
+.hero img{
+    width:100%;
+    display:block;
+    border-radius:0 0 25px 25px;
+}
+
+/* Main Sections */
+.section{
+    background:#FFFFFF;
+    margin:30px auto;
+    width:90%;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(255,182,193,0.25);
+}
+
+/* Headings */
+h1,h2,h3{
+    color:#B05D7A;
+    text-align:center;
+}
+
+/* Forms */
+input,
+textarea{
+    width:100%;
+    max-width:500px;
+    padding:12px;
+    border:2px solid #FFD6E5;
+    border-radius:15px;
+    background:#FFF8FA;
+    outline:none;
+    font-size:15px;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#E76F9A;
+}
+
+/* Buttons */
+.btn{
+    background:linear-gradient(
+        135deg,
+        #F8AFC6,
+        #E76F9A
+    );
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(231,111,154,0.35);
+}
+
+/* Product Cards */
+.card{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(255,192,203,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* Tables */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#FFD6E5;
+    color:#B05D7A;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #F3D9E4;
+}
+
+/* Footer */
+footer{
+    background:#FFEFF5;
+    color:#B05D7A;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    font-weight:500;
+}
+
+/* Cute hover effect */
+img{
+    transition:0.3s;
+}
+
+img:hover{
+    transform:scale(1.02);
+}

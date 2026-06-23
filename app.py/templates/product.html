@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adira Craft - Products</title>
+
+```
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Navbar -->
+
+<nav>
+    <div class="logo">Adira Craft ✨</div>
+
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/products">Products</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        
+    </div>
+</nav>
+
+<!-- Heading -->
+
+<section class="section">
+
+    <h1>Our Products ❤️</h1>
+
+    <p>
+        Handcrafted gifts made with love for your special moments.
+    </p>
+
+</section>
+
+<!-- Product Section -->
+
+<div class="products">
+
+    <!-- Product 1 -->
+
+    <div class="card">
+
+        <img src="{{ url_for('static', filename='images/exploision boxes.jpeg') }}"
+             alt="Explosion Box">
+
+        <div class="card-content">
+
+            <h2>Explosion Box</h2>
+
+            <p>
+                A beautiful handmade surprise box filled with memories,
+                photos and heartfelt messages.
+            </p>
+
+            <h3>₹499</h3>
+
+            <a href="https://wa.me/918292569931" class="btn">
+                Order on WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Product 2 -->
+
+    <div class="card">
+
+        <img src="{{ url_for('static', filename='images/photo_frame.jpg') }}"
+             alt="Photo Frame">
+
+        <div class="card-content">
+
+            <h2>Customized Photo Frame</h2>
+
+            <p>
+                Personalized photo frame to preserve your beautiful memories.
+            </p>
+
+            <h3>₹299</h3>
+
+            <a href="https://wa.me/918292569931" class="btn">
+                Order on WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Product 3 -->
+
+    <div class="card">
+
+        <img src="{{ url_for('static', filename='images/gift box.jpeg') }}"
+             alt="Gift box">
+
+        <div class="card-content">
+
+            <h2>Gift Box</h2>
+
+            <p>
+                Customized gift box perfect for birthdays,
+                anniversaries and celebrations.
+            </p>
+
+            <h3>₹799</h3>
+
+            <a href="https://wa.me/918292569931" class="btn">
+                Order on WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        Built by students, crafted with love,
+        and designed to create memories. ❤️
+    </p>
+
+</footer>
+```
+
+</body>
+
+</html>

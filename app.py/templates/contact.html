@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Contact Us</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/products">Products</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    
+</nav>
+
+<div class="section">
+
+<h1>Contact Us 📞</h1>
+
+<form method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+style="width:300px;padding:10px;"><br><br>
+
+<input
+type="email"
+name="email"
+placeholder="Your Email"
+style="width:300px;padding:10px;"><br><br>
+
+<textarea
+name="message"
+placeholder="Your Message"
+style="width:300px;height:150px;padding:10px;">
+</textarea>
+
+<br><br>
+
+<button type="submit" class="btn">
+Send Message
+</button>
+
+
+
+</form>
+<a href="https://wa.me/918292569931?text=Hello%20I%20want%20to%20order%20Explosion%20Box"
+target="_blank">
+Order Explosion Box
+</a>
+<a href="https://wa.me/918292569931?text=Hello%20I%20want%20to%20order%20Gift%20Box"
+target="_blank">
+Order Gift Box
+</a>
+
+</div>
+
+<footer>
+adiracraft@gmail.com
+</footer>
+
+</body>
+</html>
