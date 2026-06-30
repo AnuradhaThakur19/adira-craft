@@ -1,38 +1,88 @@
-<table>
+<!DOCTYPE html>
+<html lang="en">
 
-<tr>
-<th>Name</th>
-<th>Phone</th>
-<th>Product</th>
-</tr>
+<head>
 
-{% for order in orders %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<tr>
-<td>{{ order[1] }}</td>
-<td>{{ order[2] }}</td>
-<td>{{ order[4] }}</td>
-</tr>
+    <title>Adira Crafts | Owner Dashboard</title>
 
-{% endfor %}
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
 
-</table>
-<h2>Contact Messages</h2>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<table border="1">
-<tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Message</th>
-</tr>
+</head>
 
-{% for msg in messages %}
-<tr>
-    <td>{{ msg[0] }}</td>
-    <td>{{ msg[1] }}</td>
-    <td>{{ msg[2] }}</td>
-    <td>{{ msg[3] }}</td>
-</tr>
-{% endfor %}
-</table>
+<body>
+
+<div class="dashboard">
+
+    <h1>🌸 Adira Crafts Owner Dashboard</h1>
+
+    <div class="dashboard-card">
+
+        <h2>📦 Orders</h2>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Product</th>
+            </tr>
+
+            {% for order in orders %}
+
+            <tr>
+                <td>{{ order[0] }}</td>
+                <td>{{ order[1] }}</td>
+                <td>{{ order[2] }}</td>
+                <td>{{ order[3] }}</td>
+                <td>{{ order[4] }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <h2>💌 Customer Messages</h2>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+            </tr>
+
+            {% for msg in messages %}
+
+            <tr>
+                <td>{{ msg[0] }}</td>
+                <td>{{ msg[1] }}</td>
+                <td>{{ msg[2] }}</td>
+                <td>{{ msg[3] }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
